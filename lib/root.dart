@@ -15,9 +15,8 @@ class Root extends ConsumerWidget {
 
     return MaterialApp.router(
       title: 'SimpleApp',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       themeMode: theme,
       routeInformationParser: router.routeInformationParser,
       routeInformationProvider: router.routeInformationProvider,
